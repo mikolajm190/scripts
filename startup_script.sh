@@ -37,7 +37,7 @@ mkdir -p "$iconsDir"
 rm -rf "$iconsDir/Bibata-Modern-Ice"
 tmpDir="$(mktemp -d)"
 trap 'rm -rf "$tmpDir"' EXIT
-curl -fL --retry 3 --retry-delay 2 -o "$tmpDir/Bibata-Modern-Ice.tar.xz" "https://store.kde.org/p/1197198/Bibata-Modern-Ice.tar.xz"
+curl -fL --retry 3 --retry-delay 2 -o "$tmpDir/Bibata-Modern-Ice.tar.xz" "https://github.com/ful1e5/Bibata_Cursor/releases/latest/download/Bibata-Modern-Ice.tar.xz"
 tar -xJf "$tmpDir/Bibata-Modern-Ice.tar.xz" -C "$iconsDir"
 
 # rm -rf "$HOME/.local/share/icons/Papirus*"
