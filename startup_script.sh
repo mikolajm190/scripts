@@ -11,6 +11,7 @@ sudo pacman -Syu --noconfirm
 ### package installation ###
 echo "[Step 2]: package installation"
 sudo pacman -S --noconfirm --needed \
+    akregator \
     gimp \
     inkscape \
     intellij-idea-community-edition \
