@@ -12,13 +12,16 @@ sudo pacman -Syu --noconfirm
 echo "[Step 2]: package installation"
 sudo pacman -S --noconfirm --needed \
     akregator \
+    cachyos-gaming-meta \
     gimp \
     inkscape \
     libreoffice-still \
     libreoffice-still-pl \
+    mangohud \
     neovim \
     papirus-icon-theme \
     podman-docker \
+    steam \
     stow \
     tree \
     wl-clipboard \
