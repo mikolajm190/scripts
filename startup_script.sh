@@ -65,14 +65,27 @@ kwriteconfig6 --file "$HOME/.config/kdeglobals" --group Icons --key Theme "Papir
 kwriteconfig6 --file "$HOME/.config/kcminputrc" --group Mouse --key cursorSize 28
 kwriteconfig6 --file "$HOME/.config/kcminputrc" --group Mouse --key cursorTheme "Bibata-Modern-Ice"
 
-cat >> "$HOME/.config/kglobalshortcutsrc" <<EOF
+if [[ ! -f /usr/share/applications/Alacritty.desktop ]]; then
+    echo "[Warning]: Alacritty global shortcut service file not found"
+else
+    kwriteconfig6 \
+        --file "$HOME/.config/kglobalshortcutsrc" \
+        --group services \
+        --group "Alacritty.desktop" \
+        --key _launch \
+        "Meta+T,none,Alacritty"
+fi
 
-[services][Alacritty.desktop]
-_launch=Meta+T
-
-[services][org.kde.krunner.desktop]
-_launch=Meta+S\tAlt+Space\tSearch\tAlt+F2
-EOF
+if [[ ! -f /usr/share/kglobalaccel/org.kde.krunner.desktop ]]; then
+    echo "[Warning]: KRunner global shortcut service file not found"
+else
+    kwriteconfig6 \
+        --file "$HOME/.config/kglobalshortcutsrc" \
+        --group services \
+        --group org.kde.krunner.desktop \
+        --key _launch \
+        "Meta+S,Alt+Space\tSearch\tAlt+F2,KRunner"
+fi
 
 ### dotfiles ###
 echo "[Step 5]: dotfiles initialization"
