@@ -14,12 +14,10 @@ sudo pacman -S --noconfirm --needed \
     akregator \
     gimp \
     inkscape \
-    intellij-idea-community-edition \
     libreoffice-still \
     libreoffice-still-pl \
     neovim \
     papirus-icon-theme \
-    pnpm \
     podman-docker \
     stow \
     tree \
