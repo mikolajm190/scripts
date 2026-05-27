@@ -98,4 +98,8 @@ git config --global core.editor nvim
 git config --global alias.st "status"
 git config --global alias.lo "log --oneline --graph --decorate"
 
+### diable cow on virtualbox folder ###
+echo "[Step 7]: disable copy on write for VirtualBox folder"
+chattr +C "/home/$USER/VirtualBox VMs"
+
 echo "Done. Log out and in for changes to take effect"
