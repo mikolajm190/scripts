@@ -22,6 +22,9 @@ sudo pacman -S --noconfirm --needed \
     stow \
     tree \
     wl-clipboard \
+    virtualbox \
+    virtualbox-host-dkms \
+    virtualbox-guest-iso \
     vlc \
     zed \
     zen-browser-bin
