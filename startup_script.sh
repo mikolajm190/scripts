@@ -14,6 +14,7 @@ sudo pacman -S --noconfirm --needed \
     akregator \
     cachyos-gaming-meta \
     gimp \
+    helix \
     inkscape \
     libreoffice-still \
     libreoffice-still-pl \
