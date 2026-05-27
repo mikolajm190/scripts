@@ -60,12 +60,6 @@ kwriteconfig6 --file "$HOME/.config/kdeglobals" --group Icons --key Theme "Papir
 kwriteconfig6 --file "$HOME/.config/kcminputrc" --group Mouse --key cursorSize 28
 kwriteconfig6 --file "$HOME/.config/kcminputrc" --group Mouse --key cursorTheme "Bibata-Modern-Ice"
 
-# shortcuts
-kwriteconfig6 --file "$HOME/.config/kglobalshortcutsrc" --group kwin --key "Switch One Desktop to the Left" "Meta+Ctrl+Left,Meta+Ctrl+Left,Switch One Desktop to the Left"
-kwriteconfig6 --file "$HOME/.config/kglobalshortcutsrc" --group kwin --key "Switch One Desktop to the Right" "Meta+Ctrl+Right,Meta+Ctrl+Right,Switch One Desktop to the Right"
-kwriteconfig6 --file "$HOME/.config/kglobalshortcutsrc" --group kwin --key "Window One Desktop to the Left" "Meta+Ctrl+Shift+Left\tCtrl+Alt+Left,Meta+Ctrl+Shift+Left,Window One Desktop to the Left"
-kwriteconfig6 --file "$HOME/.config/kglobalshortcutsrc" --group kwin --key "Window One Desktop to the Right" "Meta+Ctrl+Shift+Right\tCtrl+Alt+Right,Meta+Ctrl+Shift+Right,Window One Desktop to the Right"
-
 cat >> "$HOME/.config/kglobalshortcutsrc" <<EOF
 
 [services][Alacritty.desktop]
